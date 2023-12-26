@@ -2,7 +2,7 @@ import git
 import os
 
 # Navigate to the directory
-os.chdir('/Home/Window_Display/')
+os.chdir('/home/Window_Display/')
 
 # Initialize a Git object
 repo = git.Repo('.')
