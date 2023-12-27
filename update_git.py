@@ -9,6 +9,8 @@ import schedule
 
 app_location = "Window_Display"
 
+
+
 def Job():
     # Get the home directory in a cross-platform way
     home_dir = os.path.expanduser("~")
@@ -33,7 +35,7 @@ def Job():
     if local_commit != remote_commit:
         repo.remotes.origin.pull('main')
     
-    print("I did a job")
+    print("I did a job", flush=True)
     
 
 
@@ -44,6 +46,3 @@ schedule.every(5).minutes.do(Job)
 while True:
     schedule.run_pending()
     time.sleep(1)
-
-#print("Suck that")
-#print("it worked")
