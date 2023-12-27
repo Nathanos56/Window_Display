@@ -1,6 +1,6 @@
 import subprocess
 #update dependancies
-subprocess.run(["python3", "dependancies.py"])
+subprocess.call(["python3", "dependancies.py"])
 
 import git
 import os
