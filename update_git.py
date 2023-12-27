@@ -1,8 +1,17 @@
 import git
 import os
 
+# # Navigate to the directory
+# os.chdir(f'/home/{os.getlogin()}/Window_Display')
+
+# Get the home directory in a cross-platform way
+home_dir = os.path.expanduser("~")
+
+# Construct the path to the directory
+dir_path = os.path.join(home_dir, 'Window_Display')
+
 # Navigate to the directory
-os.chdir('/home/pi/Window_Display')
+os.chdir(dir_path)
 
 # Initialize a Git object
 repo = git.Repo('.')
@@ -19,3 +28,4 @@ if local_commit != remote_commit:
     repo.remotes.origin.pull('main')
 
 print("Suck that")
+print("it worked")
