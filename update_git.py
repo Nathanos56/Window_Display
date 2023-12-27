@@ -17,3 +17,5 @@ remote_commit = repo.remotes.origin.refs.main.commit.hexsha
 # If the commit hashes are not the same, pull the latest changes
 if local_commit != remote_commit:
     repo.remotes.origin.pull('main')
+
+print("Suck that")
