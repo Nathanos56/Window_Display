@@ -5,7 +5,7 @@ def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 # List of dependencies
-dependencies = ['GitPython', 'PIL', 'tkinter']  # Add your dependencies here
+dependencies = ['PIL', 'tkinter']  # Add your dependencies here    'GitPython',
 
 # Try to import the dependencies
 for dependency in dependencies:

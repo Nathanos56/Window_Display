@@ -1,7 +1,11 @@
 import git
 import os
+import subprocess
 
 app_location = "Window_Display"
+
+#update dependancies
+subprocess.run(["python3", "dependancies.py"])
 
 # Get the home directory in a cross-platform way
 home_dir = os.path.expanduser("~")
