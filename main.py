@@ -3,8 +3,7 @@ import sys
 import subprocess
 
 subprocess.run(["python3", "dependancies.py"])
-
-
+print(f"ran subprocess")
 
 pilImage = Image.open(r"Portrait.JPG")
 showPIL(pilImage, "white")
