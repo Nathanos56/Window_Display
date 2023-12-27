@@ -35,7 +35,7 @@ def Job():
     if local_commit != remote_commit:
         repo.remotes.origin.pull('main')
     
-    print("I did a job", flush=True)
+    print("I did a job")
     
 
 
