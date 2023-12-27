@@ -1,14 +1,15 @@
+import subprocess
+#update dependancies
+subprocess.run(["python3", "dependancies.py"])
+
 import git
 import os
-import subprocess
 import time
+import schedule
 
 app_location = "Window_Display"
 
-while True:
-    #update dependancies
-    subprocess.run(["python3", "dependancies.py"])
-
+def Job():
     # Get the home directory in a cross-platform way
     home_dir = os.path.expanduser("~")
 
@@ -32,8 +33,15 @@ while True:
     if local_commit != remote_commit:
         repo.remotes.origin.pull('main')
     
-    #checks github every 5 minutes
-    time.sleep(300)
+
+
+#checks github every 5 minutes
+schedule.every(5).minutes.do(Job)
+    
+# Keep the script running
+while True:
+    schedule.run_pending()
+    time.sleep(1)
 
 #print("Suck that")
 #print("it worked")
