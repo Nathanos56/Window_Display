@@ -33,6 +33,8 @@ def Job():
     if local_commit != remote_commit:
         repo.remotes.origin.pull('main')
     
+    print("I did a job")
+    
 
 
 #checks github every 5 minutes
