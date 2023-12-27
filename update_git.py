@@ -1,14 +1,13 @@
 import git
 import os
 
-# # Navigate to the directory
-# os.chdir(f'/home/{os.getlogin()}/Window_Display')
+app_location = "Window_Display"
 
 # Get the home directory in a cross-platform way
 home_dir = os.path.expanduser("~")
 
 # Construct the path to the directory
-dir_path = os.path.join(home_dir, 'Window_Display')
+dir_path = os.path.join(home_dir, app_location)
 
 # Navigate to the directory
 os.chdir(dir_path)
