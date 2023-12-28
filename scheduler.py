@@ -1,4 +1,7 @@
 import subprocess
+#update dependancies
+subprocess.call(["python3", "dependancies.py"])
+
 import os
 from daemonize import Daemonize
 import time

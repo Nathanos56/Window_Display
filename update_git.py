@@ -1,7 +1,4 @@
-import subprocess
-#update dependancies
-subprocess.call(["python3", "dependancies.py"])
-
+#import subprocess
 import git
 import os
 import time
