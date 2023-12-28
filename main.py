@@ -12,3 +12,4 @@ pilImage2 = Image.open(r"Landscape.JPG")
 showPIL(pilImage2, "black")
 
 print("heck freaking yeah")
+print(f"maybe not")
