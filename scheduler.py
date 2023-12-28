@@ -1,9 +1,16 @@
 import subprocess
 import os
+from daemonize import Daemonize
+import time
+import schedule
 
-def run_script(script_path):
+def run_script():
     # Create a detached process running the script
-    subprocess.Popen(["python3", script_path])
+    subprocess.Popen(["python3", "update_git.py"])
 
-# Call the function with the path to your script
-run_script("update_git.py")
+# Create a daemon
+daemon = Daemonize(app="update_git", pid="/tmp/update_git.pid", action=run_script)
+
+# Start the daemon
+daemon.start()
+
