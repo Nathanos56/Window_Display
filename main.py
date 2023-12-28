@@ -10,3 +10,5 @@ pilImage = Image.open(r"Portrait.JPG")
 showPIL(pilImage, "white")
 pilImage2 = Image.open(r"Landscape.JPG")
 showPIL(pilImage2, "black")
+
+print("heck freaking yeah")
