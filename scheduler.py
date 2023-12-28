@@ -1,10 +1,10 @@
 import subprocess
+import os
 # Get the home directory in a cross-platform way
 home_dir = os.path.expanduser("~")
 #update dependancies
 subprocess.call(["python3", f"{home_dir}/Window_Display/dependancies.py"])
 
-import os
 from daemonize import Daemonize
 import time
 import schedule
