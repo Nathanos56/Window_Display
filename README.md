@@ -7,9 +7,8 @@ To-DO:
 - [x] It rotates, scales, and displays images
 - [x] Automatically checks this GitHub repo for changes in the background
 - [x] Installs dependencies
-
-- [] Use the Google Drive API to check for new images on my Google Drive
-- [] Add a relay and button to shut off the display and backlight when I want to go to sleep
-- [] Pre-process the images
-- [] Get gifs working
-- [] Get videos working
+- [ ] Use the Google Drive API to check for new images on my Google Drive
+- [ ] Add a relay and button to shut off the display and backlight when I want to go to sleep
+- [ ] Pre-process the images
+- [ ] Get gifs working
+- [ ] Get videos working
